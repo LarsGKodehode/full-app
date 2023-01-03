@@ -1,10 +1,12 @@
 // Libraries
+import { NavLink, Outlet } from 'react-router-dom';
+
 // Icons
 import { MdHomeFilled, MdInfo } from 'react-icons/md';
-import { NavLink, Outlet } from 'react-router-dom';
 
 // Assets
 import BackgroundVideo from '../assets/movies/PlanetSpin.mp4';
+
 // Components
 import Backdrop from '../components/backdrop';
 
