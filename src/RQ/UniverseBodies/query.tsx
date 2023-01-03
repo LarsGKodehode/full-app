@@ -39,13 +39,31 @@ function UniverseBodies() {
 }
 
 type StellarBody = {
-  englishName: string;
+  alternativeName: string;
+  aphelion: number;
+  argPeriapsis: number;
+  aroundPlanet: unknown; // Figure out
+  avgTemp: number; // Kelvin, Celcius, Farenheit
+  axialTilt: number;
+  bodyType: string | 'Planet';
+  density: number;
   discoveredBy: string;
   discoveryDate: string;
-  gravity: number;
+  eccentricity: number;
+  englishName: string;
   equaRadius: number;
+  escape: number;
+  flattening: number;
+  gravity: number;
+  id: string;
   inclination: number;
+  isPlanet: boolean;
+  longAscNode: number;
+  mainAnomaly: number;
+  mass: { massValue: number; massExponent: number };
+  meanRadius: number;
   moons: StellarBodyMoon[] | undefined;
+  vol: { volValue: number; volExponent: number };
 };
 
 type StellarBodyMoon = {
