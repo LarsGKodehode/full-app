@@ -32,7 +32,7 @@ function LandingPage() {
         <Outlet />
       </main>
 
-      <footer className='justify-end w-full p-2 text-white bg-slate-700/50'>
+      <footer className="justify-end w-full p-2 text-white bg-slate-700/50">
         <h3>Footer down here!</h3>
       </footer>
     </div>
