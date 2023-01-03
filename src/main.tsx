@@ -9,7 +9,9 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 
 // Create the React object
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement,
+);
 
 // Start rendering
 root.render(
