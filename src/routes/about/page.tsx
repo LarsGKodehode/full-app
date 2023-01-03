@@ -1,6 +1,6 @@
 function AboutPage() {
   return (
-    <>
+    <div className="min-h-screen">
       <Section>
         <h1>About</h1>
         <p>
@@ -8,7 +8,7 @@ function AboutPage() {
           comming soon TM.
         </p>
       </Section>
-    </>
+    </div>
   );
 }
 
