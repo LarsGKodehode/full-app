@@ -8,7 +8,7 @@ import Backdrop from '../components/backdrop';
 
 function LandingPage() {
   return (
-    <div className="relative flex flex-col min-h-screen place-items-cente">
+    <div className="relative flex flex-col min-h-screen place-items-center">
       <Backdrop>
         <video
           src={BackgroundVideo}
