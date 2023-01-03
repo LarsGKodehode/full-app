@@ -79,10 +79,12 @@ function PlanetCard(props: StellarBody) {
           Planet Name: <br /> {props.englishName}
         </p>
         <p>
-          Discovered by: <br /> {props.discoveredBy ? props.discoveredBy : "Unknown"}
+          Discovered by: <br />{' '}
+          {props.discoveredBy ? props.discoveredBy : 'Unknown'}
         </p>
         <p>
-          Discovery date: <br /> {props.discoveryDate ? props.discoveryDate : "Unknown"}
+          Discovery date: <br />{' '}
+          {props.discoveryDate ? props.discoveryDate : 'Unknown'}
         </p>
       </div>
 
