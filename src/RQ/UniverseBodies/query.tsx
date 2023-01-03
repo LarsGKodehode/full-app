@@ -38,21 +38,20 @@ function UniverseBodies() {
   );
 }
 
-
 type StellarBody = {
   englishName: string;
   discoveredBy: string;
   discoveryDate: string;
-  gravity: number,
-  equaRadius: number,
-  inclination: number,
-  moons: StellarBodyMoon[] | undefined
+  gravity: number;
+  equaRadius: number;
+  inclination: number;
+  moons: StellarBodyMoon[] | undefined;
 };
 
 type StellarBodyMoon = {
-  moon: string,
-  rel: string
-}
+  moon: string;
+  rel: string;
+};
 
 function PlanetCard(props: StellarBody) {
   return (
@@ -72,9 +71,7 @@ function PlanetCard(props: StellarBody) {
       </div>
 
       <div className="w-1/2 text-xs text-right">
-        <p>
-          Gravity: {props.gravity}
-        </p>
+        <p>Gravity: {props.gravity}</p>
 
         <MoonList moons={props.moons} />
       </div>
@@ -83,25 +80,25 @@ function PlanetCard(props: StellarBody) {
 }
 
 function MoonList({ moons }: { moons: StellarBodyMoon[] | undefined }) {
-  const [isHovering, setIsHovering] = useState(false)
+  const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <div className='relative'
+    <div
+      className="relative"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <p>
-        Moons: {moons ? moons.length : 0}
-      </p>
+      <p>Moons: {moons ? moons.length : 0}</p>
 
-      {
-        isHovering && moons &&
-        <ul className='absolute top-0 p-2 -right-20 rounded-xl bg-slate-600'>
-          {moons.map((moon, index) => <li key={index}>{moon.moon}</li>)}
+      {isHovering && moons && (
+        <ul className="absolute top-0 p-2 -right-20 rounded-xl bg-slate-600">
+          {moons.map((moon, index) => (
+            <li key={index}>{moon.moon}</li>
+          ))}
         </ul>
-      }
+      )}
     </div>
-  )
+  );
 }
 
 export default UniverseBodies;
