@@ -19,7 +19,7 @@ function LandingPage() {
         ></video>
       </Backdrop>
 
-      <div className="flex flex-row-reverse w-full p-2 text-white bg-slate-700/50">
+      <div className="flex flex-row-reverse w-full p-2 text-white bg-slate-700/50 fixed">
         <nav className="">
           <ul className="flex">
             <li className="m-2">
@@ -32,7 +32,7 @@ function LandingPage() {
         </nav>
       </div>
 
-      <main className="flex-grow w-full">
+      <main className="flex-grow w-full mt-16">
         <Outlet />
       </main>
 
