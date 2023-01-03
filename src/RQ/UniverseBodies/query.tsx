@@ -42,13 +42,13 @@ type StellarBody = {
   alternativeName: string;
   aphelion: number;
   argPeriapsis: number;
-  aroundPlanet: unknown; // Figure out
-  avgTemp: number; // Kelvin, Celcius, Farenheit
+  aroundPlanet: unknown; // Figure out valid fields
+  avgTemp: number; // Measurment? Kelvin, Celcius, Farenheit
   axialTilt: number;
   bodyType: string | 'Planet';
   density: number;
-  discoveredBy: string;
-  discoveryDate: string;
+  discoveredBy: string | undefined;
+  discoveryDate: string | undefined;
   eccentricity: number;
   englishName: string;
   equaRadius: number;
