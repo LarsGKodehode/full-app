@@ -86,7 +86,7 @@ function MoonList({ moons }: { moons: StellarBodyMoon[] | undefined }) {
     <div
       className="relative"
       onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
+      onMouseLeave={() => setTimeout(() => setIsHovering(false), 200)}
     >
       <p>Moons: {moons ? moons.length : 0}</p>
 
