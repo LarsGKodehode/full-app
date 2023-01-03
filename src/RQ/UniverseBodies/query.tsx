@@ -70,7 +70,7 @@ function PlanetCard(props: StellarBody) {
         </p>
       </div>
 
-      <div className="w-1/2 text-xs text-right">
+      <div className="w-1/2 text-xs flex flex-col items-end">
         <p>Gravity: {props.gravity}</p>
 
         <MoonList moons={props.moons} />
@@ -91,7 +91,7 @@ function MoonList({ moons }: { moons: StellarBodyMoon[] | undefined }) {
       <p>Moons: {moons ? moons.length : 0}</p>
 
       {isHovering && moons && (
-        <ul className="absolute top-0 p-2 -right-20 rounded-xl bg-slate-600">
+        <ul className="absolute top-0 p-2 -right-24 rounded-xl bg-slate-600 z-10">
           {moons.map((moon, index) => (
             <li key={index}>{moon.moon}</li>
           ))}
