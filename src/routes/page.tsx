@@ -3,8 +3,12 @@ import { NavLink, Outlet } from 'react-router-dom';
 
 // Assets
 import BackgroundVideo from '../assets/movies/PlanetSpin.mp4';
+
 // Components
 import Backdrop from '../components/backdrop';
+
+// Icons
+import {MdHomeFilled, MdInfo} from 'react-icons/md'
 
 function LandingPage() {
   return (
@@ -23,10 +27,10 @@ function LandingPage() {
         <nav className="">
           <ul className="flex">
             <li className="m-2">
-              <NavMenuLink to="/">Home</NavMenuLink>
+              <NavMenuLink to="/"><MdHomeFilled size={30} /></NavMenuLink>
             </li>
             <li className="m-2">
-              <NavMenuLink to="/about">About</NavMenuLink>
+              <NavMenuLink to="/about"><MdInfo size={30} /></NavMenuLink>
             </li>
           </ul>
         </nav>
