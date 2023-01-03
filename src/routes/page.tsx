@@ -6,7 +6,7 @@ import Backdrop from '../components/backdrop';
 
 function LandingPage() {
   return (
-    <div className="relative flex flex-col min-h-screen place-items-center bg-slate-300/10">
+    <div className="relative flex flex-col min-h-screen place-items-cente">
       <Backdrop>
         <img
           className="w-full"
@@ -15,7 +15,7 @@ function LandingPage() {
         />
       </Backdrop>
 
-      <div className="flex flex-row-reverse w-full bg-slate-400">
+      <div className="flex flex-row-reverse w-full p-2 text-white bg-slate-700/50">
         <nav className="">
           <ul className="flex">
             <li className="m-2">
@@ -28,9 +28,13 @@ function LandingPage() {
         </nav>
       </div>
 
-      <main className="w-full flex-gro">
+      <main className="flex-grow w-full">
         <Outlet />
       </main>
+
+      <footer className='justify-end w-full p-2 text-white bg-slate-700/50'>
+        <h3>Footer down here!</h3>
+      </footer>
     </div>
   );
 }
